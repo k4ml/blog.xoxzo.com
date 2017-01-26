@@ -9,7 +9,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '.'))
 
 AUTHOR = 'Iqbal Abdullah'
 SITENAME = 'Xoxzo Official Blog: Empowerment'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://blog.xoxzo.com'
 
 PATH = 'content'
 
@@ -18,7 +18,9 @@ TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
